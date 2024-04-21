@@ -82,7 +82,7 @@ function App() {
   }, [raceData]);
 
   function fetchRaceResults() {
-    fetch("http://ergast.com/api/f1/current/last/results.json")
+    fetch("https://ergast.com/api/f1/current/last/results.json")
       .then((response) => response.json())
       .then((data) => {
         const race = data.MRData.RaceTable.Races[0];
